@@ -43,7 +43,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Live Site
 
-[lewfi.dev](https://lewfi.dev) — coming soon
+[lewfi.dev](https://lewfi.dev) — Up and running!
 ```
 
 Once you've updated it, save and push it to GitHub:
