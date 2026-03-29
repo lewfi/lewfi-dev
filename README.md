@@ -44,10 +44,3 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ## Live Site
 
 [lewfi.dev](https://lewfi.dev) — Up and running!
-```
-
-Once you've updated it, save and push it to GitHub:
-```
-git add README.md
-git commit -m "Update README"
-git push
