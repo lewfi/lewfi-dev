@@ -6,7 +6,7 @@ import Projects from "../components/Projects";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-zinc-950 text-white pt-24 max-w-3xl mx-auto">
+    <main className="min-h-screen bg-zinc-950 text-white pt-24 px-8 max-w-3xl mx-auto">
       <Hero />
       <Socials />
       <Projects />
