@@ -12,20 +12,18 @@ const links = [
 
 export default function Socials() {
     return (
-        <section className="mb-8">
-            <div className="text-sm text-zinc-500 flex gap-8">     
-                {links.map((link) => (
-                    <a 
-                        key={link.name}
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-white transition-colors duration-500"
-                    >
-                        {link.name}
-                    </a>
-                ))}
-            </div>
-        </section>
+        <div className="text-sm text-zinc-500 flex gap-8">     
+            {links.map((link) => (
+                <a 
+                    key={link.name}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors duration-500"
+                >
+                    {link.name}
+                </a>
+            ))}
+        </div>
     );
 }
