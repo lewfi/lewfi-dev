@@ -13,12 +13,12 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section className="mb-8">
-            <h2 className="text-2xl font-serif font-bold text-white mb-4">
+        <section className="flex flex-col justify-center snap-start min-h-screen px-4 md:px-8 max-w-3xl mx-auto py-24" id="projects">
+            <p className="text-xs text-zinc-500 uppercase tracking-widest mb-4">
                 Projects
-            </h2>
+            </p>
 
-            <div className="grid gap-6 grid-cols-2">
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
                 {projects.map((project) => (
                     
                     /* ChariWork Card */
@@ -27,14 +27,14 @@ export default function Projects() {
                         href={project.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-zinc-800 hover:shadow-xl transition-shadow duration-300"
+                        className="bg-zinc-800 hover:shadow-xl transition-shadow duration-300 overflow-hidden rounded-2xl"
                     >
                         <Image 
                             src={project.image} 
                             alt={project.title}
                             width={600}
                             height={400}
-                            className="hover:scale-110 transition-transform duration-500 overflow-hidden rounded-lg"
+                            className="hover:scale-110 transition-transform duration-500"
                         />
                         <div className="p-6">
                             <h3 className="text-lg font-bold text-white mb-1">
