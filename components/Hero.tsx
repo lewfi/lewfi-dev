@@ -6,8 +6,8 @@ import Socials from "../components/Socials";
 
 export default function Hero() {
     return (
-        <div className="snap-start min-h-screen px-4 md:px-8 max-w-3xl mx-auto py-24 flex items-center justify-center" id="home">
-            <div className="bg-zinc-900 rounded-2xl p-6 mb-4">
+        <div className="snap-start min-h-screen px-4 md:px-8 max-w-5xl mx-auto py-24 flex items-center justify-center" id="home">
+            <div className="bg-zinc-900 rounded-2xl p-6 mb-4 w-full">
                 <p className="text-stone-500 text-sm font-bold mb-2">
                     Computer Science • University of California, Santa Cruz
                 </p>

@@ -2,7 +2,7 @@
 
 export default function Experience() {
     return (
-        <section className="snap-start min-h-screen flex flex-col justify-center px-4 md:px-8 max-w-3xl mx-auto" id="exp">
+        <section className="snap-start min-h-screen flex flex-col justify-center px-4 md:px-8 max-w-5xl mx-auto" id="exp">
             <p className="text-xs text-zinc-500 uppercase tracking-widest mb-4">
                 Experience
             </p>

@@ -2,23 +2,23 @@
 
 export default function About(){
     return (
-        <section className="flex flex-col justify-center snap-start min-h-screen px-4 md:px-8 max-w-3xl mx-auto py-12" id="about">
+        <section className="flex flex-col justify-center snap-start min-h-screen px-4 md:px-8 max-w-5xl mx-auto py-12" id="about">
             <p className="text-xs text-zinc-500 uppercase tracking-widest mb-4">
                 About Me
             </p>
-            <div className="bg-zinc-900 rounded-2xl p-8 mb-4">
-                <p className="text-zinc-400 text-sm md:text-base max-w-xl leading-relaxed">
+            <div className="bg-zinc-900 rounded-2xl p-8 mb-4 w-full">
+                <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
                     I'm a fourth-year Computer Science student at UC Santa Cruz, graduating in June 2026. 
                     I enjoy working across Full-Stack Development, Machine Learning, and Data Engineering, with a desire to build products that are helpful at scale. 
                     My goal is to leverage data and machine learning to deliver meaningful insights through my projects and future work.
                 </p>
             </div>
 
-            <p className="text-xs text-zinc-500 uppercase tracking-widest mb-2">
+            <p className="text-xs text-zinc-500 uppercase tracking-widest mb-4">
                 Skills
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-zinc-900 rounded-2xl p-8">
                     <p className="text-xs text-zinc-500 uppercase tracking-widest mb-2">
                         Languages

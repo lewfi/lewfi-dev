@@ -13,7 +13,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section className="flex flex-col justify-center snap-start min-h-screen px-4 md:px-8 max-w-3xl mx-auto py-24" id="projects">
+        <section className="flex flex-col justify-center snap-start min-h-screen px-4 md:px-8 max-w-5xl mx-auto py-24" id="projects">
             <p className="text-xs text-zinc-500 uppercase tracking-widest mb-4">
                 Projects
             </p>
