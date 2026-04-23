@@ -29,7 +29,6 @@ export default function About(){
                         <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">C/C++</span>
                         <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Java</span>
                         <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">HTML/CSS</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Shell</span>
                     </div>
                 </div>
 
@@ -53,11 +52,10 @@ export default function About(){
                         Tools & Databases
                     </p>
                     <div className="flex flex-wrap gap-2">
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Git/GitHub</span>
+                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Git</span>
+                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">GitHub</span>
                         <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">PostgreSQL (Neon, Supabase)</span>
                         <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Vercel</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Powershell</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Linux</span>
                     </div>
                 </div>
 
