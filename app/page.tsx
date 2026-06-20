@@ -1,19 +1,27 @@
-// Main page of website, where components are imported and rendered.
-
-import Hero from "../components/Hero";
-import Projects from "../components/Projects";
+import CursorGlow from "../components/CursorGlow";
+import AnimationInit from "../components/AnimationInit";
 import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
 import About from "../components/About";
-import Experience from "../components/Experience"
+import Projects from "../components/Projects";
+import Experience from "../components/Experience";
+import Now from "../components/Now";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
-    <div className="bg-zinc-950 text-white h-screen overflow-y-scroll snap-y snap-proximity">
+    <>
+      <CursorGlow />
+      <AnimationInit />
       <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Experience />
-    </div>
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <Experience />
+        <Now />
+        <Contact />
+      </main>
+    </>
   );
 }

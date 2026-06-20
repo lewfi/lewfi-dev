@@ -1,74 +1,119 @@
-// Component for About section of website: talks about me, my goals, my skills, etc.
+const MONO: React.CSSProperties = {
+  fontFamily: "var(--font-jetbrains-mono, 'JetBrains Mono', monospace)",
+};
 
-export default function About(){
-    return (
-        <section className="flex flex-col justify-center snap-start min-h-screen px-4 md:px-8 max-w-5xl mx-auto py-12" id="about">
-            <p className="text-xs text-zinc-500 uppercase tracking-widest mb-4">
-                About Me
-            </p>
-            <div className="bg-zinc-900 rounded-2xl p-8 mb-4 w-full">
-                <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
-                    I'm a fourth-year Computer Science student at UC Santa Cruz, graduating in June 2026. 
-                    I enjoy working across Full-Stack Development, Machine Learning, and Data Engineering, with a desire to build products that are helpful at scale. 
-                    My goal is to leverage data and machine learning to deliver meaningful insights through my projects and future work.
-                </p>
+const CARD: React.CSSProperties = {
+  background: "rgba(20,24,27,0.6)",
+  border: "1px solid rgba(255,255,255,0.07)",
+  borderRadius: "16px",
+  padding: "22px",
+};
+
+const SKILL_GROUPS = [
+  {
+    label: "languages",
+    color: "10,185,129",
+    skills: ["TypeScript", "Python", "JavaScript", "Java", "C/C++", "HTML/CSS"],
+  },
+  {
+    label: "frameworks",
+    color: "139,92,246",
+    skills: ["React", "Next.js", "Tailwind", "ReCharts", "scikit-learn", "NumPy", "Scapy"],
+  },
+  {
+    label: "tools & db",
+    color: "56,189,248",
+    skills: ["PostgreSQL", "Neon", "Supabase", "Git", "Vercel", "VS Code"],
+  },
+  {
+    label: "certifications",
+    color: "251,191,36",
+    skills: ["CompTIA A+", "AWS Cloud Practitioner"],
+  },
+];
+
+export default function About() {
+  return (
+    <section
+      id="about"
+      style={{ position: "relative", zIndex: 2, maxWidth: "1140px", margin: "0 auto", padding: "130px 40px 90px" }}
+    >
+      <div className="reveal" style={{ ...MONO, fontSize: "13px", color: "#10b981", letterSpacing: "2px", marginBottom: "26px" }}>
+        01 / ABOUT
+      </div>
+
+      <div style={{ display: "grid", gridTemplateColumns: "1.35fr 1fr", gap: "64px", alignItems: "start" }}>
+        {/* Bio */}
+        <div className="reveal">
+          <h2 style={{
+            fontSize: "clamp(30px, 4vw, 46px)", lineHeight: "1.12", fontWeight: 600,
+            letterSpacing: "-1px", margin: "0 0 26px", color: "#f3f5f6",
+          }}>
+            I build across{" "}
+            <span style={{ color: "#10b981" }}>full-stack</span> and{" "}
+            <span style={{ color: "#38bdf8" }}>data engineering</span>.
+          </h2>
+          <p style={{ fontSize: "17px", lineHeight: "1.7", color: "#aab0b6", margin: "0 0 18px", maxWidth: "540px" }}>
+            I recently graduated from UC Santa Cruz with a degree in Computer Science. I enjoy working where thoughtful engineering meets real product value — using data to deliver meaningful insights, and shipping interfaces that feel great to use.
+          </p>
+          <p style={{ fontSize: "17px", lineHeight: "1.7", color: "#aab0b6", margin: 0, maxWidth: "540px" }}>
+            Right now I&apos;m a Full-Stack Developer at Eclypse Media Group, and I&apos;m open to new-grad software roles where I can build at scale.
+          </p>
+        </div>
+
+        {/* Education card */}
+        <div
+          className="reveal tilt"
+          style={{
+            background: "linear-gradient(160deg, rgba(20,24,27,0.9), rgba(12,15,17,0.8))",
+            border: "1px solid rgba(255,255,255,0.08)",
+            borderRadius: "18px",
+            padding: "30px",
+            willChange: "transform",
+            transition: "transform .15s ease-out",
+          }}
+        >
+          <div style={{ ...MONO, fontSize: "12px", color: "#6f757b", letterSpacing: "1px", marginBottom: "20px" }}>~/education</div>
+          <div style={{ fontSize: "21px", fontWeight: 600, color: "#f3f5f6", marginBottom: "6px" }}>UC Santa Cruz</div>
+          <div style={{ fontSize: "15px", color: "#aab0b6", marginBottom: "22px" }}>B.A. Computer Science</div>
+
+          <div style={{ display: "flex", gap: "10px", marginBottom: "24px" }}>
+            <div style={{ flex: 1, background: "rgba(16,185,129,0.1)", border: "1px solid rgba(16,185,129,0.28)", borderRadius: "10px", padding: "12px 14px" }}>
+              <div style={{ ...MONO, fontSize: "22px", fontWeight: 700, color: "#10b981" }}>3.82</div>
+              <div style={{ ...MONO, fontSize: "11px", color: "#8a9197", marginTop: "2px" }}>GPA</div>
             </div>
-
-            <p className="text-xs text-zinc-500 uppercase tracking-widest mb-4">
-                Skills
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-zinc-900 rounded-2xl p-8">
-                    <p className="text-xs text-zinc-500 uppercase tracking-widest mb-2">
-                        Languages
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">TypeScript/JavaScript</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Python</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">C/C++</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Java</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">HTML/CSS</span>
-                    </div>
-                </div>
-
-                <div className="bg-zinc-900 rounded-2xl p-8">
-                    <p className="text-xs text-zinc-500 uppercase tracking-widest mb-2">
-                        Frameworks & Libraries
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">React</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Next.js</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Tailwind CSS</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">ReCharts</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Scikit-Learn</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">NumPy</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Scapy</span>
-                    </div>
-                </div>
-
-                <div className="bg-zinc-900 rounded-2xl p-8">
-                    <p className="text-xs text-zinc-500 uppercase tracking-widest mb-2">
-                        Tools & Databases
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Git</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">GitHub</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">PostgreSQL (Neon, Supabase)</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">Vercel</span>
-                    </div>
-                </div>
-
-                <div className="bg-zinc-900 rounded-2xl p-8">
-                    <p className="text-xs text-zinc-500 uppercase tracking-widest mb-2">
-                        Certifications
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">CompTIA A+</span>
-                        <span className="bg-zinc-800 text-zinc-200 text-xs px-3 py-1 rounded-full font-serif font-bold">AWS Certified Cloud Practitioner</span>
-                    </div>
-                </div>
+            <div style={{ flex: 1, background: "rgba(139,92,246,0.1)", border: "1px solid rgba(139,92,246,0.28)", borderRadius: "10px", padding: "12px 14px" }}>
+              <div style={{ ...MONO, fontSize: "22px", fontWeight: 700, color: "#a78bfa" }}>&apos;26</div>
+              <div style={{ ...MONO, fontSize: "11px", color: "#8a9197", marginTop: "2px" }}>CLASS OF</div>
             </div>
-        </section>
-    )
+          </div>
+
+          <div style={{ ...MONO, fontSize: "12px", color: "#6f757b", letterSpacing: "1px", marginBottom: "12px" }}>coursework</div>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "7px" }}>
+            {["Machine Learning", "Artificial Intelligence", "Computer Security", "Advanced Networks", "Systems Design"].map(c => (
+              <span key={c} style={{ ...MONO, fontSize: "11px", color: "#c2c7cc", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", padding: "5px 10px", borderRadius: "6px" }}>
+                {c}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Skills */}
+      <div className="reveal" style={{ marginTop: "80px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "18px" }}>
+          {SKILL_GROUPS.map(({ label, color, skills }) => (
+            <div key={label} style={CARD}>
+              <div style={{ ...MONO, fontSize: "12px", color: `rgb(${color})`, letterSpacing: "1px", marginBottom: "16px" }}>{label}</div>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+                {skills.map(s => (
+                  <span key={s} className="sk" style={{ "--c": color } as React.CSSProperties}>{s}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

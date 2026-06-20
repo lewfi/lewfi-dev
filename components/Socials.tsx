@@ -1,8 +1,3 @@
-// Component for social media links
-
-// Note: .map() used to loop through links array and render each link as an anchor tag.
-//       key prop used for each link to help React identify items in list and optimize rendering.
-
 const links = [
     { name: "LinkedIn", href: "https://www.linkedin.com/in/benjaminlien/" },
     { name: "GitHub", href: "https://github.com/lewfi" },
@@ -12,9 +7,9 @@ const links = [
 
 export default function Socials() {
     return (
-        <div className="text-sm text-zinc-500 flex gap-8">     
+        <div className="text-sm text-zinc-500 flex gap-8">
             {links.map((link) => (
-                <a 
+                <a
                     key={link.name}
                     href={link.href}
                     target="_blank"
