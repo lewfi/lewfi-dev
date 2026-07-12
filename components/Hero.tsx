@@ -49,7 +49,7 @@ export default function Hero() {
         padding: "0 24px",
       }}>
         <div style={{ ...MONO, fontSize: "13px", color: "#10b981", letterSpacing: "1px", marginBottom: "20px" }}>
-          {"// full-stack developer · data engineer"}
+          {"// full-stack developer · software engineer"}
         </div>
         <h1 style={{
           fontSize: "clamp(56px, 9vw, 116px)",
