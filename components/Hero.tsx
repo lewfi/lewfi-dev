@@ -62,11 +62,8 @@ export default function Hero() {
           fontSize: "clamp(15px, 1.5vw, 18px)", color: "#9aa0a6",
           margin: "24px 0 0", maxWidth: "520px", lineHeight: "1.5",
         }}>
-          CS grad from UC Santa Cruz building products that are helpful at scale — from full-stack apps to data pipelines.
+          CS grad from UC Santa Cruz building products that are helpful at scale.
         </p>
-        <div style={{ ...MONO, fontSize: "12px", color: "#5f656b", marginTop: "40px", letterSpacing: "1px" }}>
-          ↓ grab a chip · throw it around ↓
-        </div>
       </div>
 
       {/* Draggable physics chips */}
