@@ -4,7 +4,7 @@ const MONO: React.CSSProperties = {
 
 const EXPERIENCES = [
   {
-    period: "May 2026 — Present",
+    period: "May 2026 — July 2026",
     title: "Full-Stack Developer",
     org: "Eclypse Media Group",
     location: "Pacifica, CA",
