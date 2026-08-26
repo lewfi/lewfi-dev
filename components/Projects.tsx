@@ -97,7 +97,7 @@ export default function Projects() {
 
       <a
         className="reveal tilt"
-        href="https://job-tracker-6qjb.vercel.app/"
+        href="https://job-tracker-indol-eight.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
         style={{
@@ -165,7 +165,7 @@ export default function Projects() {
           }}>
             <div style={{ width: "100%", borderRadius: "12px", overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)" }}>
               <Image
-                src="https://api.microlink.io/?url=https://job-tracker-6qjb.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
+                src="https://api.microlink.io/?url=https://job-tracker-indol-eight.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
                 alt="Job Tracker"
                 width={600}
                 height={400}
