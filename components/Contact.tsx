@@ -7,7 +7,7 @@ const GRID_TEXTURE =
   "repeating-linear-gradient(to right, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 120px), " +
   "repeating-linear-gradient(to bottom, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 120px)";
 
-const RESUME_HREF = "https://docs.google.com/document/d/1yWLIhhOSMvaKH6PxjRCu1Siht6F5ADCH1PZkE_3qP9g/edit?usp=sharing";
+const RESUME_HREF = "https://drive.google.com/file/d/1MTlDd8UzfAGbiaHqs3UYEYrMxdH9Nyqo/view?usp=sharing";
 
 export default function Contact() {
   return (
@@ -45,7 +45,7 @@ export default function Contact() {
             className="underline-hover"
             style={{ ...MONO, fontSize: "14px", color: "#9ca2a8" }}
           >
-            Download résumé ↓
+            View résumé →
           </a>
         </div>
       </div>
