@@ -5,8 +5,8 @@ const MONO: React.CSSProperties = {
 const PROJECTS = [
   {
     name: "Job Tracker",
-    desc: "A full-stack job application tracker with a FastAPI backend, React dashboard, and Neon-hosted PostgreSQL database, with multi-user JWT authentication and pipeline/time-in-stage analytics.",
-    tags: ["FastAPI", "React", "PostgreSQL", "SQLAlchemy", "JWT Auth"],
+    desc: "A full-stack job application tracker with a FastAPI backend, React dashboard, and Neon-hosted PostgreSQL database — deployed with multi-user JWT authentication, bcrypt password hashing, and an append-only status history log powering four analytics endpoints.",
+    tags: ["Python", "FastAPI", "Neon", "SQLAlchemy", "Docker", "JWT"],
     link: "https://github.com/lewfi/job-tracker",
     linkLabel: "View repo",
     demo: "https://job-tracker-indol-eight.vercel.app/",
@@ -22,9 +22,9 @@ const PROJECTS = [
     demoLabel: null,
   },
   {
-    name: "Photo Server",
-    desc: "A self-hosted photo library that replaces cloud storage — drag-and-drop upload, EXIF-aware thumbnailing, HEIC & RAW support, running on a home server over Tailscale.",
-    tags: ["Python", "FastAPI", "Jinja2", "Pillow"],
+    name: "Self-Hosted Photo Server",
+    desc: "A self-hosted photo library built with FastAPI, replacing cloud storage — client-side SHA-256 hashing with automatic retry, EXIF-based orientation correction, RAW & HEIC support, and full album management, with all remote access routed through a Tailscale VPN mesh instead of exposed ports.",
+    tags: ["Python", "FastAPI", "Pillow"],
     link: "https://github.com/lewfi/photoserver",
     linkLabel: "View repo",
     demo: null,

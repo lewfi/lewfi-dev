@@ -4,23 +4,14 @@ const MONO: React.CSSProperties = {
 
 const EXPERIENCES = [
   {
-    period: "May — July 2026",
-    title: "Full-Stack Developer",
+    period: "May — Aug 2026",
+    title: "Software Developer",
     org: "Eclypse Media Group",
     location: "Pacifica, CA",
     bullets: [
-      "Built a 5-page responsive portfolio site with React, Next.js, Tailwind & TypeScript, translating a concept design into production",
-      "Developed a reusable component library — category filtering, hover-triggered video previews, and Framer Motion animations",
-      "Implemented responsive nav, form validation & SEO; laid groundwork for AWS deployment + SES-powered contact backend",
-    ],
-  },
-  {
-    period: "Mar — Jun 2026",
-    title: "Course Reader",
-    org: "Baskin Engineering, UCSC",
-    location: "Intro to Computer Networks",
-    bullets: [
-      "Supported course instruction — graded assignments, gave timely feedback, and reinforced students' understanding of the material",
+      "Built a responsive 5-page site for a media studio using Next.js, TypeScript, and Tailwind CSS, achieving 97 performance/100 accessibility on desktop Lighthouse audits",
+      "Designed a PostgreSQL schema with row-level security policies in Supabase and built an authenticated admin CMS supporting full CRUD, publish/feature toggles, and drag-and-drop reordering",
+      "Implemented the app around server components for data fetching and client components for interaction, with middleware-enforced route protection and serverless API route handling validated contact submissions through Resend",
     ],
   },
 ];

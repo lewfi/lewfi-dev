@@ -3,9 +3,9 @@ const MONO: React.CSSProperties = {
 };
 
 const SKILLS = [
-  { category: "Languages", items: ["Python", "TypeScript", "JavaScript", "Swift", "SQL"] },
-  { category: "Frameworks", items: ["FastAPI", "Next.js", "React", "SwiftUI", "Tailwind CSS"] },
-  { category: "Data & Infra", items: ["PostgreSQL", "Supabase", "SQLite", "Docker", "Vercel", "SQLAlchemy"] },
+  { category: "Languages", items: ["Python", "TypeScript", "JavaScript", "CSS/HTML"] },
+  { category: "Frameworks", items: ["FastAPI", "React", "Next.js", "SQLAlchemy", "Tailwind CSS", "Recharts", "Pillow"] },
+  { category: "Data & Infra", items: ["PostgreSQL", "Supabase", "Neon", "Docker", "Git/GitHub", "GitHub Actions", "Vercel", "Resend", "Claude Code"] },
 ];
 
 export default function Skills() {
