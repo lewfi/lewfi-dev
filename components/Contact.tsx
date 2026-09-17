@@ -25,7 +25,7 @@ export default function Contact() {
           margin: 0, fontSize: "clamp(40px,7vw,84px)", fontWeight: 700,
           letterSpacing: "-1.5px", lineHeight: "1.05", color: "#f5f3ec",
         }}>
-          Let&apos;s build<br />something.
+          Contact<br />me here.
         </h2>
         <div style={{ display: "flex", gap: "18px", justifyContent: "center", alignItems: "center", marginTop: "48px", flexWrap: "wrap" }}>
           <a
