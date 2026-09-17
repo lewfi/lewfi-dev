@@ -2,55 +2,68 @@ const MONO: React.CSSProperties = {
   fontFamily: "var(--font-jetbrains-mono, 'JetBrains Mono', monospace)",
 };
 
-const LINKS = [
-  { label: "GitHub",   href: "https://github.com/lewfi",                                                                                          c: "16,185,129" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/benjaminlien/",                                                                         c: "56,189,248" },
-  { label: "Spotify",  href: "https://open.spotify.com/user/lulify_?si=9de70972f6a747e9",                                                        c: "139,92,246" },
-  { label: "Resume",   href: "https://docs.google.com/document/d/1yWLIhhOSMvaKH6PxjRCu1Siht6F5ADCH1PZkE_3qP9g/edit?usp=sharing",                c: "251,191,36" },
-];
+const GRID_TEXTURE =
+  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n2)' opacity='0.05'/%3E%3C/svg%3E\"), " +
+  "repeating-linear-gradient(to right, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 120px), " +
+  "repeating-linear-gradient(to bottom, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 120px)";
+
+const RESUME_HREF = "https://docs.google.com/document/d/1yWLIhhOSMvaKH6PxjRCu1Siht6F5ADCH1PZkE_3qP9g/edit?usp=sharing";
 
 export default function Contact() {
   return (
     <section
       id="contact"
-      style={{ position: "relative", zIndex: 2, maxWidth: "1140px", margin: "0 auto", padding: "90px 40px 60px" }}
+      style={{ position: "relative", background: "#14161a", padding: "140px clamp(20px,6vw,64px) 90px", overflow: "hidden" }}
     >
-      <div
-        className="reveal"
-        style={{
-          textAlign: "center",
-          background: "radial-gradient(120% 130% at 50% 0%, rgba(139,92,246,0.14), transparent 55%)",
-          border: "1px solid rgba(255,255,255,0.08)",
-          borderRadius: "28px",
-          padding: "70px 40px",
-        }}
-      >
-        <div style={{ ...MONO, fontSize: "13px", color: "#8b5cf6", letterSpacing: "2px", marginBottom: "22px" }}>
-          04 / CONTACT
+      <div style={{ position: "absolute", inset: 0, pointerEvents: "none", backgroundImage: GRID_TEXTURE }} />
+
+      <div className="reveal" style={{ position: "relative", maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
+        <div style={{ ...MONO, fontSize: "13px", letterSpacing: "2px", color: "#d4ff3d", textTransform: "uppercase", marginBottom: "28px" }}>
+          04 / Contact
         </div>
         <h2 style={{
-          fontSize: "clamp(34px, 5vw, 58px)", fontWeight: 600,
-          letterSpacing: "-1.5px", color: "#f3f5f6",
-          margin: "0 0 18px",
+          margin: 0, fontSize: "clamp(40px,7vw,84px)", fontWeight: 700,
+          letterSpacing: "-1.5px", lineHeight: "1.05", color: "#f5f3ec",
         }}>
-          Let&apos;s build something together.
+          Let&apos;s build<br />something.
         </h2>
-        <p style={{ fontSize: "17px", color: "#aab0b6", margin: "0 0 36px" }}>
-          Open to new-grad SWE roles and interesting collaborations.
-        </p>
-        <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-          {LINKS.map(({ label, href, c }) => (
-            <a
-              key={label}
-              className="social"
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ "--c": c } as React.CSSProperties}
-            >
-              {label}
-            </a>
-          ))}
+        <div style={{ display: "flex", gap: "18px", justifyContent: "center", alignItems: "center", marginTop: "48px", flexWrap: "wrap" }}>
+          <a
+            href="mailto:benjaminlien17@gmail.com"
+            className="pill-btn"
+            style={{
+              background: "#d4ff3d", color: "#14161a", fontSize: "16px", fontWeight: 600,
+              padding: "16px 32px", borderRadius: "999px",
+            }}
+          >
+            benjaminlien17@gmail.com
+          </a>
+          <a
+            href={RESUME_HREF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline-hover"
+            style={{ ...MONO, fontSize: "14px", color: "#9ca2a8" }}
+          >
+            Download résumé ↓
+          </a>
+        </div>
+      </div>
+
+      <div style={{
+        position: "relative", marginTop: "110px", paddingTop: "24px",
+        borderTop: "1px solid rgba(255,255,255,0.09)",
+        display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "12px",
+        ...MONO, fontSize: "12px", color: "#6f757b",
+      }}>
+        <span>© 2026 Benjamin Lien</span>
+        <div style={{ display: "flex", gap: "20px" }}>
+          <a href="https://www.linkedin.com/in/benjaminlien/" target="_blank" rel="noopener noreferrer" className="underline-hover">
+            linkedin.com/in/benjaminlien
+          </a>
+          <a href="https://github.com/lewfi" target="_blank" rel="noopener noreferrer" className="underline-hover">
+            github.com/lewfi
+          </a>
         </div>
       </div>
     </section>
